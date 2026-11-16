@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta - Modelo de Caja y Posición</title>
+    <style>
+        /* Estilos generales y aplicación del Modelo de Caja */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            width: 800px;
+            margin: 20px auto;
+            border: 3px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Contenedor superior para Header y Aside superior */
+        .fila-superior {
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        header {
+            width: 70%;
+            background-color: #e67e22; /* Tono naranja/marrón del boceto */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border: 2px solid #d35400;
+        }
+
+        .aside-superior {
+            width: 30%;
+            background-color: #f39c12; /* Tono amarillo/naranja claro */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border: 2px solid #d68910;
+        }
+
+        /* Barra de navegación (nav) */
+        nav {
+            width: 100%;
+            background-color: #3498db; /* Azul del boceto */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 2px solid #2980b9;
+        }
+
+        /* Contenedor inferior para Section y Aside inferior */
+        .fila-inferior {
+            display: flex;
+            width: 100%;
+        }
+
+        section {
+            width: 50%;
+            background-color: #d35400; /* Naranja oscuro del boceto */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border: 2px solid #a04000;
+        }
+
+        .aside-inferior {
+            width: 50%;
+            background-color: #f1c40f; /* Amarillo del boceto */
+            color: #333;
+            padding: 60px 20px;
+            text-align: center;
+            border: 2px solid #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fila Superior: Header y Aside -->
+    <div class="fila-superior">
+        <header>
+            <h3>Esto es una etiqueta &lt;header&gt;</h3>
+        </header>
+        <div class="aside-superior">
+            <p>Esto es una imagen</p>
+        </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <p>Esto es una etiqueta nav</p>
+    </nav>
+
+    <!-- Fila Inferior: Section y Aside -->
+    <div class="fila-inferior">
+        <section>
+            <p>Esto es una etiqueta &lt;section&gt;</p>
+        </section>
+        <div class="aside-inferior">
+            <p>Esto es una etiqueta &lt;aside&gt;</p>
+        </div>
+    </div>
+
+</body>
+</html>
